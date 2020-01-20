@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const MovieList = (props) => {
 	const [ movies, setMovies ] = useState([]);
 	useEffect(() => {
-		const movieTitle = movies.find((show) => movies.id === Number(props.match.params.id));
+		// const movieTitle = movies.find((show) => movies.id === Number(props.match.params.id));
 		const getMovies = () => {
 			axios
 				.get('http://localhost:5000/api/movies')
